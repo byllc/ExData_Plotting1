@@ -4,9 +4,7 @@ source("get_data.R")
 # Open the png plot component
 png("plot2.png",width=480,height=480,units="px",bg="transparent")
 
-plot(
-  hpcDataForDates$datetime,
-  hpcDataForDates$Global_active_power,
+plot( hpcDataForDates$datetime, hpcDataForDates$Global_active_power,
   xlab ="",
   ylab = "Global Active Power",
   type ="l"
